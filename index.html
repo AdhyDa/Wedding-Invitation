@@ -895,52 +895,306 @@
         }
     </script>
     
-    <!-- Floating Bottom Navigation -->
-    <nav class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 p-1.5 md:p-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl flex items-center gap-1.5 sm:gap-2" data-aos="fade-up" data-aos-anchor="#home" data-aos-anchor-placement="bottom-bottom" data-aos-delay="1000">
+    <!-- WISHES SECTION -->
+    <section id="wishes" class="relative w-full py-20 md:py-32 bg-wedding-cream text-wedding-dark z-10">
+        <!-- Header -->
+        <header class="text-center px-4 mb-10 md:mb-14" data-aos="fade-up">
+            <h2 class="font-serif font-bold text-4xl md:text-5xl lg:text-6xl text-wedding-dark mb-2 drop-shadow-sm flex items-center justify-center gap-3">
+                <span class="text-3xl md:text-5xl font-light text-[#8E8271]">~</span> 
+                Best Wishes 
+                <span class="text-3xl md:text-5xl font-light text-[#8E8271]">~</span>
+            </h2>
+            <h3 class="font-sans font-semibold text-xs md:text-sm text-[#8E8271]">Give Greetings & Prayers of Blessing</h3>
+        </header>
+
+        <div class="max-w-3xl mx-auto px-4 md:px-6" data-aos="fade-up">
+            <div class="bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.2)] border border-gray-100 overflow-hidden">
+                
+                <!-- Comments Header -->
+                <div class="bg-[#8E8271] text-white px-5 py-3.5 flex items-center gap-2">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m0 14H5.17L4 17.17V4h16zM6 12h8v2H6zm0-3h12v2H6zm0-3h12v2H6z"/></svg>
+                    <span class="font-sans font-bold text-sm tracking-wide">65 Comments</span>
+                </div>
+
+                <!-- Form Body -->
+                <div class="p-5 md:p-6 pb-4 border-b-2 border-gray-100">
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Nama" class="w-full px-4 py-2 border border-gray-200 rounded text-sm font-sans focus:outline-none focus:border-[#8E8271] focus:ring-1 focus:ring-[#8E8271] transition-colors placeholder:text-gray-400">
+                        <input type="text" placeholder="Hubungan dgn mempelai(Teman,saudara,dll)" class="w-full px-4 py-2 border border-gray-200 rounded text-sm font-sans focus:outline-none focus:border-[#8E8271] focus:ring-1 focus:ring-[#8E8271] transition-colors placeholder:text-gray-400">
+                        <div class="relative">
+                            <textarea rows="4" placeholder="Ucapan" maxlength="500" class="w-full px-4 py-2 border border-gray-200 rounded text-sm font-sans focus:outline-none focus:border-[#8E8271] focus:ring-1 focus:ring-[#8E8271] transition-colors resize-none placeholder:text-gray-400"></textarea>
+                            <span class="absolute bottom-3 right-3 text-[10px] text-gray-400 font-sans">500</span>
+                        </div>
+                        <select class="w-full px-4 py-2 border border-gray-200 rounded text-sm font-sans text-gray-500 focus:outline-none focus:border-[#8E8271] focus:ring-1 focus:ring-[#8E8271] transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[right_1rem_center] bg-[length:10px_10px]">
+                            <option value="">Konfirmasi Kehadiran</option>
+                            <option value="Hadir">Hadir</option>
+                            <option value="Tidak Hadir">Tidak Hadir</option>
+                        </select>
+                        <div class="pt-2">
+                            <button type="button" class="bg-[#B0A18E] hover:bg-[#8E8271] text-white px-6 py-2 rounded font-sans font-bold text-sm shadow transition-colors">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Comments List (Max 5 Displayed) -->
+                <div class="px-5 md:px-8">
+                    
+                    <!-- Item 1 -->
+                    <div class="py-5 border-b border-gray-100 flex gap-3 text-left relative group">
+                        <div class="w-8 h-8 md:w-9 md:h-9 rounded-full bg-yellow-400 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-sm">Y</div>
+                        <div class="flex-1">
+                            <div class="flex items-center flex-wrap gap-2 mb-1">
+                                <h4 class="font-sans font-bold text-sm md:text-[15px] text-gray-800">Yohan E & fam (Semarang)</h4>
+                                <span class="bg-gray-500 text-white text-[9px] px-1.5 py-0.5 rounded flex items-center gap-1 shadow-sm leading-none pt-[3px] pb-[1px]">
+                                    <svg class="w-2.5 h-2.5 mb-[1px]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    Tidak Hadir
+                                </span>
+                            </div>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-400 mb-2">
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                3 tahun, 8 bulan lalu
+                            </div>
+                            <p class="font-sans text-[13px] md:text-sm text-gray-500 leading-relaxed max-w-2xl">
+                                selamat menempuh hidup baru... tuhan yesus memberkati keluarga kalian dg kasih, kebahagiaan, dan keberhasilan.
+                            </p>
+                            <!-- Hover Reply Button -->
+                            <div class="mt-2 text-left opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
+                                <button class="text-[11px] font-bold text-[#8E8271] hover:text-[#5c5449] border-b border-transparent hover:border-[#8E8271] transition-all">Reply</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="py-5 border-b border-gray-100 flex gap-3 text-left relative group">
+                        <div class="w-8 h-8 md:w-9 md:h-9 rounded-full bg-red-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-sm">M</div>
+                        <div class="flex-1">
+                            <div class="flex items-center flex-wrap gap-2 mb-1">
+                                <h4 class="font-sans font-bold text-sm md:text-[15px] text-gray-800">Marta Ida</h4>
+                                <span class="bg-gray-500 text-white text-[9px] px-1.5 py-0.5 rounded flex items-center gap-1 shadow-sm leading-none pt-[3px] pb-[1px]">
+                                    <svg class="w-2.5 h-2.5 mb-[1px]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    Hadir
+                                </span>
+                            </div>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-400 mb-2">
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                3 tahun, 8 bulan lalu
+                            </div>
+                            <p class="font-sans text-[13px] md:text-sm text-gray-500 leading-relaxed max-w-2xl">
+                                congratulations yaaa ! semoga tuhan memberkati keluarga kalian, dan dipersatukan selamanya. yesus memberkati kel.
+                            </p>
+                            <!-- Hover Reply Button -->
+                            <div class="mt-2 text-left opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
+                                <button class="text-[11px] font-bold text-[#8E8271] hover:text-[#5c5449] border-b border-transparent hover:border-[#8E8271] transition-all">Reply</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="py-5 border-b border-gray-100 flex gap-3 text-left relative group">
+                        <div class="w-8 h-8 md:w-9 md:h-9 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-sm">E</div>
+                        <div class="flex-1">
+                            <div class="flex items-center flex-wrap gap-2 mb-1">
+                                <h4 class="font-sans font-bold text-sm md:text-[15px] text-gray-800">EL Kevin</h4>
+                                <span class="bg-gray-500 text-white text-[9px] px-1.5 py-0.5 rounded flex items-center gap-1 shadow-sm leading-none pt-[3px] pb-[1px]">
+                                    <svg class="w-2.5 h-2.5 mb-[1px]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    Hadir
+                                </span>
+                            </div>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-400 mb-2">
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                3 tahun, 8 bulan lalu
+                            </div>
+                            <p class="font-sans text-[13px] md:text-sm text-gray-500 leading-relaxed max-w-2xl">
+                                Selamat menempuh hidup yg baru mas yusuf & mba sari. Tuhan yesus memberkati perjalanan rumah tangga kalian selalu 💕
+                            </p>
+                            <!-- Hover Reply Button -->
+                            <div class="mt-2 text-left opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
+                                <button class="text-[11px] font-bold text-[#8E8271] hover:text-[#5c5449] border-b border-transparent hover:border-[#8E8271] transition-all">Reply</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="py-5 border-b border-gray-100 flex gap-3 text-left relative group">
+                        <div class="w-8 h-8 md:w-9 md:h-9 rounded-full bg-gray-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-sm">R</div>
+                        <div class="flex-1">
+                            <div class="flex items-center flex-wrap gap-2 mb-1">
+                                <h4 class="font-sans font-bold text-sm md:text-[15px] text-gray-800">Rhoric</h4>
+                                <span class="bg-gray-500 text-white text-[9px] px-1.5 py-0.5 rounded flex items-center gap-1 shadow-sm leading-none pt-[3px] pb-[1px]">
+                                    <svg class="w-2.5 h-2.5 mb-[1px]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    Tidak Hadir
+                                </span>
+                            </div>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-400 mb-2">
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                3 tahun, 8 bulan lalu
+                            </div>
+                            <p class="font-sans text-[13px] md:text-sm text-gray-500 leading-relaxed max-w-2xl">
+                                barakallahu laka wa baraka alaika wa jamaa baynaa kumaa fii khakr
+                            </p>
+                            <!-- Hover Reply Button -->
+                            <div class="mt-2 text-left opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
+                                <button class="text-[11px] font-bold text-[#8E8271] hover:text-[#5c5449] border-b border-transparent hover:border-[#8E8271] transition-all">Reply</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="py-5 border-transparent flex gap-3 text-left relative group">
+                        <div class="w-8 h-8 md:w-9 md:h-9 rounded-full bg-green-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-sm">D</div>
+                        <div class="flex-1">
+                            <div class="flex items-center flex-wrap gap-2 mb-1">
+                                <h4 class="font-sans font-bold text-sm md:text-[15px] text-gray-800">Devinta & Yasir</h4>
+                                <span class="bg-gray-500 text-white text-[9px] px-1.5 py-0.5 rounded flex items-center gap-1 shadow-sm leading-none pt-[3px] pb-[1px]">
+                                    <svg class="w-2.5 h-2.5 mb-[1px]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                    Tidak Hadir
+                                </span>
+                            </div>
+                            <div class="flex items-center gap-1 text-[11px] text-gray-400 mb-2">
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                3 tahun, 7 bulan lalu
+                            </div>
+                            <p class="font-sans text-[13px] md:text-sm text-gray-500 leading-relaxed max-w-2xl">
+                                selamat ya sar, semoga samawa aaaminn ! 😍❤🌷💕
+                            </p>
+                            <!-- Hover Reply Button -->
+                            <div class="mt-2 text-left opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
+                                <button class="text-[11px] font-bold text-[#8E8271] hover:text-[#5c5449] border-b border-transparent hover:border-[#8E8271] transition-all">Reply</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Pagination Structure -->
+                <div class="px-5 py-4 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between gap-3 bg-gray-50">
+                    <p class="font-sans text-xs text-gray-500 font-medium">Showing 1 to 5 of 65 entries</p>
+                    <nav class="flex items-center gap-1" aria-label="Pagination">
+                        <button class="px-3 md:px-4 py-1.5 border border-gray-200 text-gray-400 rounded bg-white text-xs font-sans cursor-not-allowed" disabled>Previous</button>
+                        
+                        <button class="px-3 py-1.5 border border-[#8E8271] bg-[#8E8271] text-white rounded text-xs font-sans font-bold shadow-sm">1</button>
+                        <button class="px-3 py-1.5 border border-gray-200 text-gray-600 bg-white rounded text-xs font-sans hover:bg-gray-100 transition-colors">2</button>
+                        <button class="px-3 py-1.5 border border-gray-200 text-gray-600 bg-white rounded text-xs font-sans hover:bg-gray-100 transition-colors">3</button>
+                        
+                        <span class="px-1 py-1.5 text-gray-400 text-xs tracking-widest hidden sm:inline-block">...</span>
+                        
+                        <button class="px-3 md:px-4 py-1.5 border border-gray-200 text-gray-600 bg-white rounded text-xs font-sans hover:bg-gray-100 transition-colors">Next</button>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="relative w-full pt-16 pb-24 md:pt-24 md:pb-32 bg-[#9E9E9E] text-white overflow-hidden z-0">
+        <!-- Minimalist CSS Background Pattern -->
+        <div class="absolute inset-0 opacity-[0.03] bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,1)_25%,rgba(255,255,255,1)_50%,transparent_50%,transparent_75%,rgba(255,255,255,1)_75%,rgba(255,255,255,1)_100%)] [background-size:20px_20px]"></div>
         
-        <!-- Home (Active) -->
-        <a href="#home" class="p-2 sm:p-2.5 rounded-xl bg-wedding-dark/90 text-white shadow-sm hover:-translate-y-1 transition-all duration-300" aria-label="Home">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
-                <!-- Using a basic envelope path layout -->
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-            </svg>
-        </a>
-        
-        <!-- Couple -->
-        <a href="#couple" class="p-2 sm:p-2.5 rounded-xl text-white border border-white/40 hover:bg-white/20 hover:-translate-y-1 transition-all duration-300" aria-label="Couple">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-            </svg>
-        </a>
-        
-        <!-- Event -->
-        <a href="#event" class="p-2 sm:p-2.5 rounded-xl text-white border border-white/40 hover:bg-white/20 hover:-translate-y-1 transition-all duration-300" aria-label="Event">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008z" />
-            </svg>
-        </a>
-        
-        <!-- Gallery -->
-        <a href="#gallery" class="p-2 sm:p-2.5 rounded-xl text-white border border-white/40 hover:bg-white/20 hover:-translate-y-1 transition-all duration-300" aria-label="Gallery">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-            </svg>
-        </a>
-        
-        <!-- Gift -->
-        <a href="#gift" class="p-2 sm:p-2.5 rounded-xl text-white border border-white/40 hover:bg-white/20 hover:-translate-y-1 transition-all duration-300" aria-label="Gift">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
-            </svg>
-        </a>
-        
-        <!-- Wishes -->
-        <a href="#wishes" class="p-2 sm:p-2.5 rounded-xl text-white border border-white/40 hover:bg-white/20 hover:-translate-y-1 transition-all duration-300" aria-label="Wishes">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.89 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.89l13.416-13.416zm0 0L19.5 7.125" />
-            </svg>
-        </a>
-    </nav>
+        <div class="relative z-10 flex flex-col items-center justify-center max-w-xl mx-auto px-6 text-center" data-aos="fade-up">
+            
+            <!-- Social Icons -->
+            <div class="flex items-center justify-center gap-2.5 mb-5 md:mb-6">
+                <!-- WhatsApp -->
+                <a href="#" class="w-9 h-9 md:w-11 md:h-11 rounded-full bg-white text-[#9E9E9E] flex items-center justify-center hover:-translate-y-1 hover:shadow-lg transition-transform" aria-label="WhatsApp">
+                    <svg class="w-4 h-4 md:w-5 md:h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </a>
+                <!-- Instagram -->
+                <a href="#" class="w-9 h-9 md:w-11 md:h-11 rounded-full bg-white text-[#9E9E9E] flex items-center justify-center hover:-translate-y-1 hover:shadow-lg transition-transform" aria-label="Instagram">
+                    <svg class="w-4 h-4 md:w-5 md:h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.842a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
+                </a>
+                <!-- Link -->
+                <a href="#" class="w-9 h-9 md:w-11 md:h-11 rounded-full bg-white text-[#9E9E9E] flex items-center justify-center hover:-translate-y-1 hover:shadow-lg transition-transform" aria-label="Link">
+                    <svg class="w-4 h-4 md:w-5 md:h-5 fill-current" viewBox="0 0 24 24"><path d="M12.28 17.15c-.27-.27-.27-.71 0-.98.27-.27.71-.27.98 0 1.95 1.94 5.12 1.94 7.07 0 1.95-1.95 1.95-5.12 0-7.07l-3.54-3.54c-1.95-1.94-5.12-1.95-7.07 0-.27.27-.71.27-.98 0-.27-.27-.27-.71 0-.98 2.49-2.49 6.55-2.49 9.04 0 2.49 2.5 2.5 6.55.01 9.04l-3.54 3.54c-2.5 2.49-6.55 2.49-9.04 0-2.49-2.49-2.49-6.55.01-9.04.27-.27.71-.27.98 0 .27.27.27.71 0 .98-1.95 1.95-1.95 5.12 0 7.07l3.54 3.54z"/> <path d="M17.5 12c.4 0 .7.3.7.7 0 .4-.3.7-.7.7H6.5c-.4 0-.7-.3-.7-.7 0-.4.3-.7.7-.7h11z"/></svg>
+                </a>
+            </div>
+
+            <!-- Footer Text -->
+            <p class="font-sans font-extrabold text-[13px] md:text-base text-white tracking-wide mb-2 md:mb-3 opacity-95">Special Moments Created by Weddingku.vip</p>
+            
+            <!-- Default "WEDDINGKU.VIP" Logo Replacer -->
+            <div class="flex flex-col items-center justify-center text-white/90">
+                <div class="font-serif italic text-xl md:text-3xl tracking-widest drop-shadow opacity-95 flex items-center justify-center gap-1">
+                    <span class="text-3xl md:text-5xl font-light opacity-90 block -translate-y-1 md:-translate-y-2">W</span>
+                    <span class="uppercase">EDDINGKU.VIP</span>
+                </div>
+                <span class="font-sans text-[7px] md:text-[8px] mt-0 md:mt-1 tracking-[0.3em] font-light uppercase opacity-80 md:pl-8">Create your special moments</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Floating Bottom Navigation Wrapper (Solves AOS Transform Override) -->
+    <div class="fixed bottom-6 w-full flex justify-center z-50 pointer-events-none">
+        <nav class="pointer-events-auto p-1 bg-white rounded-xl shadow-[0_5px_20px_rgba(0,0,0,0.4)] border border-gray-100 flex items-center gap-1" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="500">
+            
+            <!-- Home -->
+            <a href="#home" class="relative group p-2 md:p-2.5 rounded-lg bg-gray-500 hover:bg-wedding-dark text-white transition-all duration-300" aria-label="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                </svg>
+                <span class="absolute -top-[52px] left-1/2 -translate-x-1/2 bg-[#535359] text-white text-[13px] font-sans font-bold py-1.5 px-4 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                    Home
+                    <span class="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#535359]"></span>
+                </span>
+            </a>
+            
+            <!-- Couple -->
+            <a href="#couple" class="relative group p-2 md:p-2.5 rounded-lg bg-gray-500 hover:bg-wedding-dark text-white transition-all duration-300" aria-label="Couple">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                </svg>
+                <span class="absolute -top-[52px] left-1/2 -translate-x-1/2 bg-[#535359] text-white text-[13px] font-sans font-bold py-1.5 px-4 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                    Couple
+                    <span class="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#535359]"></span>
+                </span>
+            </a>
+            
+            <!-- Event -->
+            <a href="#event" class="relative group p-2 md:p-2.5 rounded-lg bg-gray-500 hover:bg-wedding-dark text-white transition-all duration-300" aria-label="Event">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008z" />
+                </svg>
+                <span class="absolute -top-[52px] left-1/2 -translate-x-1/2 bg-[#535359] text-white text-[13px] font-sans font-bold py-1.5 px-4 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                    Event
+                    <span class="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#535359]"></span>
+                </span>
+            </a>
+            
+            <!-- Gallery -->
+            <a href="#gallery" class="relative group p-2 md:p-2.5 rounded-lg bg-gray-500 hover:bg-wedding-dark text-white transition-all duration-300" aria-label="Gallery">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+                <span class="absolute -top-[52px] left-1/2 -translate-x-1/2 bg-[#535359] text-white text-[13px] font-sans font-bold py-1.5 px-4 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                    Gallery
+                    <span class="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#535359]"></span>
+                </span>
+            </a>
+            
+            <!-- Gift -->
+            <a href="#gift" class="relative group p-2 md:p-2.5 rounded-lg bg-gray-500 hover:bg-wedding-dark text-white transition-all duration-300" aria-label="Gift">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+                </svg>
+                <span class="absolute -top-[52px] left-1/2 -translate-x-1/2 bg-[#535359] text-white text-[13px] font-sans font-bold py-1.5 px-4 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                    Gift
+                    <span class="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#535359]"></span>
+                </span>
+            </a>
+            
+            <!-- Wishes -->
+            <a href="#wishes" class="relative group p-2 md:p-2.5 rounded-lg bg-gray-500 hover:bg-wedding-dark text-white transition-all duration-300" aria-label="Wishes">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 sm:w-6 sm:h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.89 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.89l13.416-13.416zm0 0L19.5 7.125" />
+                </svg>
+                <span class="absolute -top-[52px] left-1/2 -translate-x-1/2 bg-[#535359] text-white text-[13px] font-sans font-bold py-1.5 px-4 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                    Wishes
+                    <span class="absolute -bottom-1.5 left-1/2 -translate-x-1/2 border-[6px] border-transparent border-t-[#535359]"></span>
+                </span>
+            </a>
+        </nav>
+    </div>
 
     <!-- AOS Initialization -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
