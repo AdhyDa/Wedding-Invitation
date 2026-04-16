@@ -808,51 +808,50 @@
         <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeGiftModal()"></div>
         
         <!-- Modal Content -->
-        <div id="gift-modal-content" class="relative w-[90%] max-w-md bg-wedding-dark/40 rounded-lg shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300 delay-75">
+        <div id="gift-modal-content" class="relative w-[90%] max-w-md max-h-[90vh] bg-white rounded-lg shadow-2xl overflow-y-auto transform scale-95 transition-transform duration-300 delay-75">
             <!-- Header Modal -->
-            <div class="bg-wedding-dark/40 text-white px-4 py-3 flex items-center justify-between border-b border-white/20">
+            <div class="bg-[#F8F7F5] border-b border-gray-200 text-wedding-dark px-4 py-3 flex items-center justify-between sticky top-0 z-20 shadow-sm">
                 <div class="flex items-center gap-2">
-                    <svg class="w-5 h-5 fill-current border border-white rounded-sm p-0.5" viewBox="0 0 24 24"><path d="M22 6h-4.18l-3.32-4.5c-.24-.34-.73-.41-1.07-.17-.34.24-.41.73-.18 1.07L16 6H8l2.75-3.6c.23-.34.16-.83-.18-1.07-.34-.24-.83-.16-1.07.17L6.18 6H2c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-12 8h4v6h-4v-6zm-2 6H2v-6h6v6zm14 0h-6v-6h6v6z"/></svg>
-                    <span class="font-sans font-bold text-sm tracking-wider">WEDDING GIFT</span>
+                    <svg class="w-5 h-5 fill-current border border-wedding-dark rounded-sm p-0.5" viewBox="0 0 24 24"><path d="M22 6h-4.18l-3.32-4.5c-.24-.34-.73-.41-1.07-.17-.34.24-.41.73-.18 1.07L16 6H8l2.75-3.6c.23-.34.16-.83-.18-1.07-.34-.24-.83-.16-1.07.17L6.18 6H2c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-12 8h4v6h-4v-6zm-2 6H2v-6h6v6zm14 0h-6v-6h6v6z"/></svg>
+                    <span class="font-sans font-bold text-sm tracking-widest text-[#8E8271]">WEDDING GIFT</span>
                 </div>
-                <button onclick="closeGiftModal()" class="bg-white text-[#A1907B] rounded-sm p-0.5 hover:bg-gray-100 transition-colors">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
+                <button onclick="closeGiftModal()" class="bg-gray-200 text-gray-500 rounded-sm p-1 hover:bg-red-100 hover:text-red-500 transition-colors shadow-sm focus:outline-none">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
                 </button>
             </div>
             
             <!-- Modal Body -->
-            <div class="p-3 text-center border-b-2 border-white/30">
-                <img src="couple2.jpg" alt="Mempelai" class="w-full aspect-[4/3] object-cover rounded shadow-md mb-4 border-[3px] border-white/80">
-                <h4 class="font-serif font-bold text-xl md:text-2xl text-white drop-shadow-sm mb-1">The Wedding of Sari & Yusuf</h4>
-                <p class="font-sans font-bold text-xs md:text-sm text-white drop-shadow-sm">- Minggu, 11 September 2022 -</p>
+            <div class="p-4 md:p-5 text-center border-b border-gray-100">
+                <img src="couple2.jpg" alt="Mempelai" class="w-full aspect-[4/3] object-cover rounded shadow-md mb-4 border border-gray-200">
+                <h4 class="font-serif font-bold text-xl md:text-2xl text-wedding-dark drop-shadow-sm mb-1 line-clamp-1">The Wedding of Sari & Yusuf</h4>
+                <p class="font-sans font-bold text-[11px] md:text-xs text-gray-500 tracking-wide uppercase">- Minggu, 11 September 2022 -</p>
             </div>
 
             <!-- Rekening Block -->
-            <div class="bg-white p-3 mx-3 my-4 shadow-inner rounded flex items-center justify-between border border-gray-100">
-                <div class="flex items-center gap-3">
-                    <div class="w-14 h-8 bg-blue-900 text-[#F15A23] font-sans font-extrabold text-xl italic flex items-center justify-center rounded pl-0.5 tracking-tighter">BNI</div>
-                    <div class="text-left">
-                        <p class="font-sans font-extrabold text-[13px] md:text-sm text-gray-800 leading-tight" id="rek-bni">0435138311</p>
-                        <p class="font-sans font-bold text-[10px] md:text-xs text-gray-600">a.n Sari Saraswati</p>
+            <div class="bg-gray-50 p-3 mx-4 my-4 mt-5 shadow-sm rounded-lg flex items-center justify-between border border-gray-200">
+                <div class="flex items-center gap-3 flex-1">
+                    <div class="w-14 h-8 bg-[#005e6a] text-[#F15A23] font-sans font-extrabold text-xl italic flex items-center justify-center rounded pl-0.5 tracking-tighter shadow-sm">BNI</div>
+                    <div class="text-left flex-1">
+                        <p class="font-sans font-extrabold text-sm md:text-base text-gray-800 leading-none mb-0.5" id="rek-bni">0435138311</p>
+                        <p class="font-sans font-bold text-[10px] md:text-[11px] text-gray-500 uppercase">a.n Sari Saraswati</p>
                     </div>
                 </div>
                 <!-- Copy Button -->
-                <button onclick="navigator.clipboard.writeText('0435138311').then(() => alert('Nomor Rekening berhasil disalin!'))" class="p-2 border border-gray-200 rounded hover:bg-gray-50 flex-shrink-0 transition-colors" aria-label="Copy Rekening">
-                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
+                <button onclick="navigator.clipboard.writeText('0435138311').then(() => alert('Nomor Rekening berhasil disalin!'))" class="p-2.5 ml-2 border border-gray-300 bg-white text-gray-700 rounded-md hover:bg-gray-100 hover:text-wedding-dark transition-colors flex-shrink-0 shadow-sm group focus:outline-none focus:ring-2 focus:ring-gray-200" title="Salin Rekening">
+                    <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
                 </button>
             </div>
 
             <!-- Modal Footer Button -->
-            <div class="px-6 py-4 text-center">
-                <a href="https://wa.me/6289655894616?text=Halo%20Sari%2C%20saya%20sudah%20mengirimkan%20hadiah..." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-[#6b8593] hover:bg-[#5a727f] text-white px-5 py-2.5 rounded shadow-md font-sans font-semibold text-sm transition-colors cursor-pointer">
+            <div class="px-5 pb-6 text-center">
+                <a href="https://wa.me/6289655894616?text=Halo%20Sari%2C%20saya%20sudah%20mengirimkan%20hadiah..." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 w-full bg-[#738B99] hover:bg-[#5f7583] text-white px-5 py-3 rounded-lg shadow-md font-sans font-bold text-[13px] uppercase tracking-wide transition-all hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-[#738B99]/30">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    Konfirmasi Whatsapp
+                Konfirmasi Whatsapp
                 </a>
                 
                 <!-- Footer logo substitute -->
-                <div class="mt-8 flex flex-col items-center justify-center text-white/80">
-                    <div class="font-serif italic text-xl tracking-[0.2em] drop-shadow opacity-90"><span class="text-3xl font-light pr-1">W</span> EDDINGKU.VIP</div>
-                    <span class="font-sans text-[8px] mt-1 tracking-widest uppercase opacity-80">Create your special moments</span>
+                <div class="mt-5 flex flex-col items-center justify-center text-gray-800 ml-2">
+                    <div class="font-serif italic text-lg tracking-[0.2em] font-medium"><span class="text-2xl font-light text-gray-800">W</span>EDDINGKU.VIP</div>
                 </div>
             </div>
         </div>
