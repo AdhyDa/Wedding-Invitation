@@ -54,7 +54,7 @@ Buka file script.js (atau file JS utama Anda) dan masukkan kredensial Supabase y
 ``` JavaScript
 const SUPABASE_URL = 'https://YOUR_PROJECT_ID.supabase.co';
 const SUPABASE_ANON_KEY = 'YOUR_ANON_KEY';
-const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 ```
 ### 4. Menjalankan Proyek
 Karena ini adalah situs statis, Anda dapat langsung membuka file index.html di browser Anda. Untuk pengalaman development yang lebih baik (mengatasi masalah CORS saat fetch API), disarankan menggunakan local server seperti ekstensi Live Server di VS Code.
