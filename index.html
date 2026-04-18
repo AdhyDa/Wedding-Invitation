@@ -44,7 +44,7 @@
         <div class="flex-1"></div>
 
         <!-- Content -->
-        <div class="flex flex-col items-center w-full max-w-xl" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="flex flex-col items-center w-full max-w-xl">
             <p class="font-sans font-semibold text-xs md:text-sm text-white tracking-[0.2em] uppercase drop-shadow-md mb-2">
                 The Wedding Of
             </p>
@@ -62,8 +62,8 @@
                     Dear Mr/ Mrs/ Ms
                 </p>
 
-                <h2 class="font-serif font-bold text-3xl md:text-4xl text-white shadow-black drop-shadow-lg mb-2">
-                    Nama Tamu
+                <h2 id="guest-name-intro" class="font-serif font-bold text-3xl md:text-4xl text-white shadow-black drop-shadow-lg mb-2">
+                    Bapak/Ibu/Saudara/i
                 </h2>
 
                 <p class="font-sans font-light text-[10px] md:text-xs text-gray-200 shadow-black drop-shadow-md">
@@ -134,8 +134,8 @@
             <p class="font-cursive text-2xl md:text-3xl text-white drop-shadow-md mb-1">
                 Dear....
             </p>
-            <h3 class="font-sans font-bold text-xl md:text-2xl text-white drop-shadow-lg tracking-wide mb-1">
-                Nama Tamu
+            <h3 id="guest-name-hero" class="font-sans font-bold text-xl md:text-2xl text-white drop-shadow-lg tracking-wide mb-1">
+                Bapak/Ibu/Saudara/i
             </h3>
             <p class="font-sans font-light text-[11px] md:text-xs text-gray-300 drop-shadow-md">
                 You are invited to our wedding ceremony
@@ -303,40 +303,40 @@
             </header>
 
             <!-- Big Date Badge / Countdown Container -->
-            <div class="flex flex-col items-center mb-16 md:mb-24" data-aos="zoom-in" data-aos-duration="1000">
+            <div id="countdown-container" class="flex flex-col items-center mb-16 md:mb-24" data-aos="zoom-in" data-aos-duration="1000" data-target-date="2026-06-21T09:00:00">
                 
                 <!-- Main Date Display -->
                 <div class="flex items-center justify-center gap-4 mb-8 w-full max-w-lg mx-auto">
                     <!-- Garis & Bulan -->
                     <div class="flex-1 border-b-2 border-wedding-dark/60 pb-2 flex justify-end">
-                        <span class="font-sans font-bold text-2xl md:text-5xl text-wedding-dark/70 uppercase">Agustus</span>
+                        <span class="font-sans font-bold text-2xl md:text-5xl text-wedding-dark/70 uppercase">Juni</span>
                     </div>
                     <!-- Tanggal (Kotak) -->
                     <div class="bg-gray-600 rounded-lg px-4 py-2 shadow-lg">
-                        <span class="font-serif font-bold text-5xl md:text-7xl text-white">20</span>
+                        <span class="font-serif font-bold text-5xl md:text-7xl text-white">21</span>
                     </div>
                     <!-- Tahun & Garis -->
                     <div class="flex-1 border-b-2 border-wedding-dark/60 pb-2 flex justify-start">
-                        <span class="font-sans font-bold text-3xl md:text-5xl text-wedding-dark/70">2022</span>
+                        <span class="font-sans font-bold text-3xl md:text-5xl text-wedding-dark/70">2026</span>
                     </div>
                 </div>
 
                 <!-- Countdown Timer -->
                 <div class="grid grid-cols-4 gap-2 md:gap-2 justify-center w-full max-w-xl">
                     <div class="flex flex-col items-center bg-white border border-gray-500 rounded-md py-3 px-2 shadow-sm">
-                        <span class="font-serif font-bold text-2xl md:text-3xl text-wedding-dark">0</span>
-                        <span class="font-serif text-xs md:text-sm text-gray-800">Day</span>
+                        <span id="countdown-days" class="font-serif font-bold text-2xl md:text-3xl text-wedding-dark">0</span>
+                        <span class="font-serif text-xs md:text-sm text-gray-800">Days</span>
                     </div>
                     <div class="flex flex-col items-center bg-white border border-gray-500 rounded-md py-3 px-2 shadow-sm">
-                        <span class="font-serif font-bold text-2xl md:text-3xl text-wedding-dark">0</span>
+                        <span id="countdown-hours" class="font-serif font-bold text-2xl md:text-3xl text-wedding-dark">0</span>
                         <span class="font-serif text-xs md:text-sm text-gray-800">Hours</span>
                     </div>
                     <div class="flex flex-col items-center bg-white border border-gray-500 rounded-md py-3 px-2 shadow-sm">
-                        <span class="font-serif font-bold text-2xl md:text-3xl text-wedding-dark">0</span>
+                        <span id="countdown-minutes" class="font-serif font-bold text-2xl md:text-3xl text-wedding-dark">0</span>
                         <span class="font-serif text-xs md:text-sm text-gray-800">Minutes</span>
                     </div>
                     <div class="flex flex-col items-center bg-white border border-gray-500 rounded-md py-3 px-2 shadow-sm">
-                        <span class="font-serif font-bold text-2xl md:text-3xl text-wedding-dark">0</span>
+                        <span id="countdown-seconds" class="font-serif font-bold text-2xl md:text-3xl text-wedding-dark">0</span>
                         <span class="font-serif text-xs md:text-sm text-gray-800">Seconds</span>
                     </div>
                 </div>
@@ -489,19 +489,20 @@
                     Confirmation of Attendance Wedding Invitation
                 </p>
 
-                <form class="flex flex-col gap-4 max-w-2xl mx-auto text-left">
+                <form id="form-rsvp" class="flex flex-col gap-4 max-w-2xl mx-auto text-left">
                     <div class="w-full">
-                        <input type="text" placeholder="Nama Anda" class="w-full px-4 py-3 rounded border border-transparent focus:border-white focus:outline-none focus:ring-0 bg-white text-wedding-dark placeholder-gray-400 font-sans shadow-sm" required>
+                        <input type="text" id="rsvp-nama" placeholder="Nama Anda" class="w-full px-4 py-3 rounded border border-transparent focus:border-white focus:outline-none focus:ring-0 bg-white text-wedding-dark placeholder-gray-400 font-sans shadow-sm" required>
                     </div>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <select class="w-full sm:w-1/2 px-4 py-3 rounded border border-transparent focus:border-white focus:outline-none focus:ring-0 bg-white text-wedding-dark font-sans shadow-sm font-semibold">
+                        <select id="rsvp-kehadiran" class="w-full sm:w-1/2 px-4 py-3 rounded border border-transparent focus:border-white focus:outline-none focus:ring-0 bg-white text-wedding-dark font-sans shadow-sm font-semibold" required>
                             <option value="Hadir">Hadir</option>
                             <option value="Tidak Hadir">Tidak Hadir</option>
                         </select>
-                        <select class="w-full sm:w-1/2 px-4 py-3 rounded border border-transparent focus:border-white focus:outline-none focus:ring-0 bg-white text-wedding-dark font-sans shadow-sm font-semibold">
-                            <option value="1 Orang">1 Orang</option>
-                            <option value="2 Orang">2 Orang</option>
-                            <option value="3 Orang">3 Orang</option>
+                        <select id="rsvp-jumlah" class="w-full sm:w-1/2 px-4 py-3 rounded border border-transparent focus:border-white focus:outline-none focus:ring-0 bg-white text-wedding-dark font-sans shadow-sm font-semibold">
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="3">3 Orang</option>
+                            <option value="4">4 Orang</option>
                         </select>
                     </div>
                     <button type="submit" class="w-full mt-2 bg-black/60 hover:bg-black/80 text-white font-sans font-bold py-3.5 rounded transition-colors flex items-center justify-center gap-2 shadow-sm">
@@ -799,7 +800,7 @@
         </div>
 
         <!-- Optional Wave Bottom -->
-        <div class="absolute bottom-0 left-0 w-full h-8 md:h-12 bg-[#DED6CC] rounded-t-[100%] scale-x-[1.5] translate-y-1 z-10"></div>
+        <div class="absolute bottom-0 left-0 w-full h-8 md:h-12 bg-wedding-dark rounded-t-[100%] scale-x-[1.5] translate-y-1 z-10"></div>
     </section>
 
     <!-- Modal WEDDING GIFT -->
@@ -810,7 +811,7 @@
         <!-- Modal Content -->
         <div id="gift-modal-content" class="relative w-[90%] max-w-md max-h-[90vh] bg-white rounded-lg shadow-2xl overflow-y-auto transform scale-95 transition-transform duration-300 delay-75">
             <!-- Header Modal -->
-            <div class="bg-[#F8F7F5] border-b border-gray-200 text-wedding-dark px-4 py-3 flex items-center justify-between sticky top-0 z-20 shadow-sm">
+            <div class="bg-wedding-dark border-b border-gray-200 text-wedding-dark px-4 py-3 flex items-center justify-between sticky top-0 z-20 shadow-sm">
                 <div class="flex items-center gap-2">
                     <svg class="w-5 h-5 fill-current border border-wedding-dark rounded-sm p-0.5" viewBox="0 0 24 24"><path d="M22 6h-4.18l-3.32-4.5c-.24-.34-.73-.41-1.07-.17-.34.24-.41.73-.18 1.07L16 6H8l2.75-3.6c.23-.34.16-.83-.18-1.07-.34-.24-.83-.16-1.07.17L6.18 6H2c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-12 8h4v6h-4v-6zm-2 6H2v-6h6v6zm14 0h-6v-6h6v6z"/></svg>
                     <span class="font-sans font-bold text-sm tracking-widest text-[#8E8271]">WEDDING GIFT</span>
@@ -874,177 +875,28 @@
             <div class="bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.2)] border border-gray-100 overflow-hidden">
                 
                 <!-- Comments Header -->
-                <div class="bg-[#8E8271] text-white px-5 py-3.5 flex items-center gap-2">
+                <div class="bg-wedding-dark text-white px-5 py-3.5 flex items-center gap-2">
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m0 14H5.17L4 17.17V4h16zM6 12h8v2H6zm0-3h12v2H6zm0-3h12v2H6z"/></svg>
-                    <span class="font-sans font-bold text-sm tracking-wide">65 Comments</span>
+                    <span id="wishes-count" class="font-sans font-bold text-sm tracking-wide">0 Comments</span>
                 </div>
 
                 <!-- Form Body -->
                 <div class="p-5 md:p-6 pb-4 border-b-2 border-gray-100">
-                    <form class="space-y-4">
-                        <input type="text" placeholder="Nama" class="w-full px-4 py-2 border border-gray-200 rounded text-sm font-sans focus:outline-none focus:border-[#8E8271] focus:ring-1 focus:ring-[#8E8271] transition-colors placeholder:text-gray-400">
-                        <input type="text" placeholder="Hubungan dgn mempelai(Teman,saudara,dll)" class="w-full px-4 py-2 border border-gray-200 rounded text-sm font-sans focus:outline-none focus:border-[#8E8271] focus:ring-1 focus:ring-[#8E8271] transition-colors placeholder:text-gray-400">
+                    <form id="form-wishes" class="space-y-4">
+                        <input type="text" id="wish-nama" placeholder="Nama Anda" class="w-full px-4 py-2 border border-gray-200 rounded text-sm font-sans focus:outline-none focus:border-[#8E8271] focus:ring-1 focus:ring-[#8E8271] transition-colors placeholder:text-gray-400" required>
                         <div class="relative">
-                            <textarea rows="4" placeholder="Ucapan" maxlength="500" class="w-full px-4 py-2 border border-gray-200 rounded text-sm font-sans focus:outline-none focus:border-[#8E8271] focus:ring-1 focus:ring-[#8E8271] transition-colors resize-none placeholder:text-gray-400"></textarea>
+                            <textarea id="wish-ucapan" rows="4" placeholder="Berikan ucapan terbaik Anda..." maxlength="500" class="w-full px-4 py-2 border border-gray-200 rounded text-sm font-sans focus:outline-none focus:border-[#8E8271] focus:ring-1 focus:ring-[#8E8271] transition-colors resize-none placeholder:text-gray-400" required></textarea>
                             <span class="absolute bottom-3 right-3 text-[10px] text-gray-400 font-sans">500</span>
                         </div>
-                        <select class="w-full px-4 py-2 border border-gray-200 rounded text-sm font-sans text-gray-500 focus:outline-none focus:border-[#8E8271] focus:ring-1 focus:ring-[#8E8271] transition-colors appearance-none bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[right_1rem_center] bg-[length:10px_10px]">
-                            <option value="">Konfirmasi Kehadiran</option>
-                            <option value="Hadir">Hadir</option>
-                            <option value="Tidak Hadir">Tidak Hadir</option>
-                        </select>
                         <div class="pt-2">
-                            <button type="button" class="bg-[#B0A18E] hover:bg-[#8E8271] text-white px-6 py-2 rounded font-sans font-bold text-sm shadow transition-colors">Kirim</button>
+                            <button type="submit" class="bg-wedding-dark/60 hover:bg-wedding-dark text-white px-6 py-2 rounded font-sans font-bold text-sm shadow transition-colors">Kirim Ucapan</button>
                         </div>
                     </form>
                 </div>
 
-                <!-- Comments List (Max 5 Displayed) -->
-                <div class="px-5 md:px-8">
-                    
-                    <!-- Item 1 -->
-                    <div class="py-5 border-b border-gray-100 flex gap-3 text-left relative group">
-                        <div class="w-8 h-8 md:w-9 md:h-9 rounded-full bg-yellow-400 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-sm">Y</div>
-                        <div class="flex-1">
-                            <div class="flex items-center flex-wrap gap-2 mb-1">
-                                <h4 class="font-sans font-bold text-sm md:text-[15px] text-gray-800">Yohan E & fam (Semarang)</h4>
-                                <span class="bg-gray-500 text-white text-[9px] px-1.5 py-0.5 rounded flex items-center gap-1 shadow-sm leading-none pt-[3px] pb-[1px]">
-                                    <svg class="w-2.5 h-2.5 mb-[1px]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                                    Tidak Hadir
-                                </span>
-                            </div>
-                            <div class="flex items-center gap-1 text-[11px] text-gray-400 mb-2">
-                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                3 tahun, 8 bulan lalu
-                            </div>
-                            <p class="font-sans text-[13px] md:text-sm text-gray-500 leading-relaxed max-w-2xl">
-                                selamat menempuh hidup baru... tuhan yesus memberkati keluarga kalian dg kasih, kebahagiaan, dan keberhasilan.
-                            </p>
-                            <!-- Hover Reply Button -->
-                            <div class="mt-2 text-left opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
-                                <button class="text-[11px] font-bold text-[#8E8271] hover:text-[#5c5449] border-b border-transparent hover:border-[#8E8271] transition-all">Reply</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 2 -->
-                    <div class="py-5 border-b border-gray-100 flex gap-3 text-left relative group">
-                        <div class="w-8 h-8 md:w-9 md:h-9 rounded-full bg-red-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-sm">M</div>
-                        <div class="flex-1">
-                            <div class="flex items-center flex-wrap gap-2 mb-1">
-                                <h4 class="font-sans font-bold text-sm md:text-[15px] text-gray-800">Marta Ida</h4>
-                                <span class="bg-gray-500 text-white text-[9px] px-1.5 py-0.5 rounded flex items-center gap-1 shadow-sm leading-none pt-[3px] pb-[1px]">
-                                    <svg class="w-2.5 h-2.5 mb-[1px]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                                    Hadir
-                                </span>
-                            </div>
-                            <div class="flex items-center gap-1 text-[11px] text-gray-400 mb-2">
-                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                3 tahun, 8 bulan lalu
-                            </div>
-                            <p class="font-sans text-[13px] md:text-sm text-gray-500 leading-relaxed max-w-2xl">
-                                congratulations yaaa ! semoga tuhan memberkati keluarga kalian, dan dipersatukan selamanya. yesus memberkati kel.
-                            </p>
-                            <!-- Hover Reply Button -->
-                            <div class="mt-2 text-left opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
-                                <button class="text-[11px] font-bold text-[#8E8271] hover:text-[#5c5449] border-b border-transparent hover:border-[#8E8271] transition-all">Reply</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 3 -->
-                    <div class="py-5 border-b border-gray-100 flex gap-3 text-left relative group">
-                        <div class="w-8 h-8 md:w-9 md:h-9 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-sm">E</div>
-                        <div class="flex-1">
-                            <div class="flex items-center flex-wrap gap-2 mb-1">
-                                <h4 class="font-sans font-bold text-sm md:text-[15px] text-gray-800">EL Kevin</h4>
-                                <span class="bg-gray-500 text-white text-[9px] px-1.5 py-0.5 rounded flex items-center gap-1 shadow-sm leading-none pt-[3px] pb-[1px]">
-                                    <svg class="w-2.5 h-2.5 mb-[1px]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                                    Hadir
-                                </span>
-                            </div>
-                            <div class="flex items-center gap-1 text-[11px] text-gray-400 mb-2">
-                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                3 tahun, 8 bulan lalu
-                            </div>
-                            <p class="font-sans text-[13px] md:text-sm text-gray-500 leading-relaxed max-w-2xl">
-                                Selamat menempuh hidup yg baru mas yusuf & mba sari. Tuhan yesus memberkati perjalanan rumah tangga kalian selalu 💕
-                            </p>
-                            <!-- Hover Reply Button -->
-                            <div class="mt-2 text-left opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
-                                <button class="text-[11px] font-bold text-[#8E8271] hover:text-[#5c5449] border-b border-transparent hover:border-[#8E8271] transition-all">Reply</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 4 -->
-                    <div class="py-5 border-b border-gray-100 flex gap-3 text-left relative group">
-                        <div class="w-8 h-8 md:w-9 md:h-9 rounded-full bg-gray-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-sm">R</div>
-                        <div class="flex-1">
-                            <div class="flex items-center flex-wrap gap-2 mb-1">
-                                <h4 class="font-sans font-bold text-sm md:text-[15px] text-gray-800">Rhoric</h4>
-                                <span class="bg-gray-500 text-white text-[9px] px-1.5 py-0.5 rounded flex items-center gap-1 shadow-sm leading-none pt-[3px] pb-[1px]">
-                                    <svg class="w-2.5 h-2.5 mb-[1px]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                                    Tidak Hadir
-                                </span>
-                            </div>
-                            <div class="flex items-center gap-1 text-[11px] text-gray-400 mb-2">
-                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                3 tahun, 8 bulan lalu
-                            </div>
-                            <p class="font-sans text-[13px] md:text-sm text-gray-500 leading-relaxed max-w-2xl">
-                                barakallahu laka wa baraka alaika wa jamaa baynaa kumaa fii khakr
-                            </p>
-                            <!-- Hover Reply Button -->
-                            <div class="mt-2 text-left opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
-                                <button class="text-[11px] font-bold text-[#8E8271] hover:text-[#5c5449] border-b border-transparent hover:border-[#8E8271] transition-all">Reply</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Item 5 -->
-                    <div class="py-5 border-transparent flex gap-3 text-left relative group">
-                        <div class="w-8 h-8 md:w-9 md:h-9 rounded-full bg-green-500 text-white flex items-center justify-center font-bold text-sm flex-shrink-0 shadow-sm">D</div>
-                        <div class="flex-1">
-                            <div class="flex items-center flex-wrap gap-2 mb-1">
-                                <h4 class="font-sans font-bold text-sm md:text-[15px] text-gray-800">Devinta & Yasir</h4>
-                                <span class="bg-gray-500 text-white text-[9px] px-1.5 py-0.5 rounded flex items-center gap-1 shadow-sm leading-none pt-[3px] pb-[1px]">
-                                    <svg class="w-2.5 h-2.5 mb-[1px]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-                                    Tidak Hadir
-                                </span>
-                            </div>
-                            <div class="flex items-center gap-1 text-[11px] text-gray-400 mb-2">
-                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                                3 tahun, 7 bulan lalu
-                            </div>
-                            <p class="font-sans text-[13px] md:text-sm text-gray-500 leading-relaxed max-w-2xl">
-                                selamat ya sar, semoga samawa aaaminn ! 😍❤🌷💕
-                            </p>
-                            <!-- Hover Reply Button -->
-                            <div class="mt-2 text-left opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
-                                <button class="text-[11px] font-bold text-[#8E8271] hover:text-[#5c5449] border-b border-transparent hover:border-[#8E8271] transition-all">Reply</button>
-                            </div>
-                        </div>
-                    </div>
-
+                <!-- Comments List (Dynamic via Supabase) -->
+                <div id="wishes-container" class="px-5 md:px-8 max-h-[400px] overflow-y-auto space-y-4 p-4">
                 </div>
-
-                <!-- Pagination Structure -->
-                <div class="px-5 py-4 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between gap-3 bg-gray-50">
-                    <p class="font-sans text-xs text-gray-500 font-medium">Showing 1 to 5 of 65 entries</p>
-                    <nav class="flex items-center gap-1" aria-label="Pagination">
-                        <button class="px-3 md:px-4 py-1.5 border border-gray-200 text-gray-400 rounded bg-white text-xs font-sans cursor-not-allowed" disabled>Previous</button>
-                        
-                        <button class="px-3 py-1.5 border border-[#8E8271] bg-[#8E8271] text-white rounded text-xs font-sans font-bold shadow-sm">1</button>
-                        <button class="px-3 py-1.5 border border-gray-200 text-gray-600 bg-white rounded text-xs font-sans hover:bg-gray-100 transition-colors">2</button>
-                        <button class="px-3 py-1.5 border border-gray-200 text-gray-600 bg-white rounded text-xs font-sans hover:bg-gray-100 transition-colors">3</button>
-                        
-                        <span class="px-1 py-1.5 text-gray-400 text-xs tracking-widest hidden sm:inline-block">...</span>
-                        
-                        <button class="px-3 md:px-4 py-1.5 border border-gray-200 text-gray-600 bg-white rounded text-xs font-sans hover:bg-gray-100 transition-colors">Next</button>
-                    </nav>
-                </div>
-
             </div>
         </div>
     </section>
@@ -1161,6 +1013,7 @@
 
     <!-- External Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
 </body>
 </html>
