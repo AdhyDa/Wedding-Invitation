@@ -10,22 +10,31 @@ function openInvitation() {
     const cover = document.getElementById('intro-cover');
     if (!cover) return;
     
-    // Execute slide up animation securely by manipulating inline styles
-    cover.style.transform = 'translateY(-100%)';
+    // Putar musik latar terlebih dahulu
+    const bgMusic = document.getElementById('bg-music');
+    if (bgMusic) {
+        bgMusic.play().catch(e => console.error("Audio playback prevented:", e));
+    }
     
-    // Allow page scroll again
-    document.body.classList.remove('overflow-hidden');
-    document.body.classList.add('overflow-x-hidden');
-    
-    // Hide element from DOM permanently after animation completes
+    // Jeda 2 detik sebelum memicu animasi slide up
     setTimeout(() => {
-        cover.style.display = 'none';
+        // Execute slide up animation securely by manipulating inline styles
+        cover.style.transform = 'translateY(-100%)';
         
-        // Refresh AOS to trigger animations securely on the home section content
-        if (typeof AOS !== 'undefined') {
-            AOS.refresh();
-        }
-    }, 1000);
+        // Allow page scroll again
+        document.body.classList.remove('overflow-hidden');
+        document.body.classList.add('overflow-x-hidden');
+        
+        // Hide element from DOM permanently after animation completes
+        setTimeout(() => {
+            cover.style.display = 'none';
+            
+            // Refresh AOS to trigger animations securely on the home section content
+            if (typeof AOS !== 'undefined') {
+                AOS.refresh();
+            }
+        }, 3000);
+    }, 3000); // Jeda 1.5 detik (sesuaikan antara 1000ms - 5000ms jika perlu)
 }
 
 // Script to handle Modal Interactions
