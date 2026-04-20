@@ -34,7 +34,7 @@ function openInvitation() {
                 AOS.refresh();
             }
         }, 3000);
-    }, 3000); // Jeda 1.5 detik (sesuaikan antara 1000ms - 5000ms jika perlu)
+    }, 1000); // Jeda 1.5 detik (sesuaikan antara 1000ms - 5000ms jika perlu)
 }
 
 // Script to handle Modal Interactions
